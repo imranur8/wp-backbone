@@ -1,0 +1,16 @@
+<label>Title</label>
+<% if (model.status == "Update") { %>
+    <a style="float: right;" href="#post/<%- model.post_name %>">Cancel</a>
+<% }else{ %>
+    <a style="float: right;" href="#">All Post</a>
+<% } %>
+
+<input type="text" value="<%- model.title %>" name="title" class="title" style="width:100%" />
+<label>Content</label>
+<div class="entry-content">
+    <textarea class="content" rows="20"  style="width:100%">
+        <%- _.unescape(model.content) %>
+    </textarea>
+    <input type="button" name="update" class="update" value="<%- model.status %>" />
+    <img src="<%- imageUrl %>/wpspin.gif" class="wbf_loader">
+</div>

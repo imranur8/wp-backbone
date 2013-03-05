@@ -1,0 +1,7 @@
+<a href="#post/<%- model.post_name %>"><h1 class="entry-title"><%- model.title %></h1></a>
+    <% if (isLogin) { %>
+        <a href="#edit/<%- model.post_name %>">Edit</a> | <a href="#" class="delete">Delete</a>
+    <% }  %>
+<div class="entry-content">
+    <%- _.unescape(model.post_excerpt) %>
+</div>
