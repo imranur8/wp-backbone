@@ -12,8 +12,13 @@ WP-Backbone is a basic wordpress plugin to integrate beauty of Backbone.js in th
 == Description ==
 
 This is a basic plugin to add backbone feature to your plugin development .Please make sure you are using the Pretty Permalink in your site to use this plugin .
-It will help the wordpress plugin developer to integrate the beauty of Backbone.js  in his plugin development environment, to make better web apps . Developer can follow the
+It will help the wordpress plugin developer to integrate the beauty of Backbone.js in his plugin development environment, to make better web apps . Developer can follow the
 example  "mypost" REST API endpoint for further reference .
+
+Important Links:
+
+* <a href="http://wp-backbone.cannylab.com/how-it-works/">How it works </a>
+
 
 
 = Features include: =
