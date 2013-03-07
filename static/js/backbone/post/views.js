@@ -1,6 +1,6 @@
 
 /**
- *  @package wp-backbone-plugin
+ *  @package wp-backbone
  *  @author  Md Imranur Rahman <imran.aspire@gmail.com>
  *
  *  backbone post views

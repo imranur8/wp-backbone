@@ -1,13 +1,13 @@
 <?php
 
 /**
- *  @package wp-backbone-plugin
+ *  @package wp-backbone
  *  @author  Md Imranur Rahman <imran.aspire@gmail.com>
  *  @date Date: 2/26/13
  *  @time: 6:24 PM
  *
  *    main controller file for the
- *    wp-backbone-plugin
+ *    wp-backbone
  **/
 
 
@@ -43,13 +43,13 @@ class WBF_Controller{
      */
     public function __construct( array $params = array() ){
         // add shortcode
-        add_shortcode("WP-BACKBONE-PLUGIN", array(&$this, "wbf_shortcode"));
+        add_shortcode("WP-BACKBONE", array(&$this, "wbf_shortcode"));
 
         // actions
         add_action('admin_notices', array(&$this, "wbf_adminnotice"));
 
        /**
-            * wp-backbone-plugin
+            * wp-backbone
             * activating actions
             */
         register_activation_hook( WBF_PATH . "/index.php" , array( &$this, 'wbf_plugin_install' ) );
@@ -110,15 +110,15 @@ class WBF_Controller{
      */
     public function wbf_plugin_install(){
 
-        $page = get_page_by_title( 'WP-BACKBONE-PLUGIN' );
+        $page = get_page_by_title( 'WP-BACKBONE' );
         if(empty($page)){
 
             // Create page object
             $my_post = array(
-                'post_title' => 'WP-BACKBONE-PLUGIN',
+                'post_title' => 'WP-BACKBONE',
                 'post_status' => 'publish',
                 'post_type' => "page",
-                'post_content' => "[WP-BACKBONE-PLUGIN]"
+                'post_content' => "[WP-BACKBONE]"
             );
 
             // Insert the post into the database
@@ -135,7 +135,7 @@ class WBF_Controller{
         global $wp_rewrite;
         if ($wp_rewrite->permalink_structure == ''){
             echo '<div class="updated">
-                <p>Please use pretty permalinks  to work WP-BACKBONE-PLUGIN. <a href="'.site_url().'/wp-admin/options-permalink.php"> Permalinks </a></p></div>';
+                <p>Please use pretty permalinks  to work WP-BACKBONE. <a href="'.site_url().'/wp-admin/options-permalink.php"> Permalinks </a></p></div>';
         }
     }
 

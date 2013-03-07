@@ -1,8 +1,8 @@
 <?php
 /*
 
-Plugin Name: WP-Backbone-Plugin
-Plugin URI: http://wp-backbone-plugin.cannylab.com
+Plugin Name: WP-Backbone
+Plugin URI: http://wp-backbone.cannylab.com
 Description: This is a basic wordpress plugin to integrate beauty of Backbone.js in the Wordpress Plugin development .
 Version: 1.0.0
 Author: Md Imranur Rahman  <imran.aspire@gmail.com>
@@ -11,7 +11,7 @@ Author URI: http://mdimran.net
 */
 
 /**
- *  @package wp-backbone-plugin
+ *  @package wp-backbone
  *  @author  Md Imranur Rahman <imran.apsire@gmail.com>
  *  @version 1.0.0
  *
@@ -47,7 +47,7 @@ Author URI: http://mdimran.net
 
 ini_set( 'log_errors', 1 );
 
-ini_set( 'error_log', WP_CONTENT_DIR . '/plugins/wp-backbone-plugin/log/debug.log' );
+ini_set( 'error_log', WP_CONTENT_DIR . '/plugins/wp-backbone/log/debug.log' );
 
 
 //ini_set( 'error_reporting', E_ALL ^ E_NOTICE );

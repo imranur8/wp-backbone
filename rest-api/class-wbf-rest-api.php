@@ -1,12 +1,12 @@
 <?php
 /**
- *  @package wp-backbone-plugin
+ *  @package wp-backbone
  *  @author  Md Imranur Rahman <imran.aspire@gmail.com>
  *  @date Date: 2/26/13
  *  @time: 1:07 AM
  *
  *   REST API controller  for the
- *   WP-BACKBONE-PLUGIN
+ *   WP-BACKBONE
  *
  **/
 
