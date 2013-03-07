@@ -1,0 +1,19 @@
+.DS_Store
+Icon?
+log/debug.log
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+cache/*
+
+# zf
+.zfproject.xml
+INSTALL.txt
+LICENSE.txt
+demos/
+.idea/
+*.pyc
